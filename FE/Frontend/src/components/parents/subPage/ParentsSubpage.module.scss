@@ -1,0 +1,102 @@
+.subPageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 665px; //컨테이너 높이 조절
+  overflow: hidden; // 내부 요소가 컨테이너를 벗어나지 않도록 함
+
+  .imageContainer {
+    width: 1150px; // 컨테이너 너비 조절
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; // Light 이미지 위치를 위해 상대 위치로 설정
+
+    .slogan {
+      position: absolute;
+      top: 70px;
+      left: 70px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+
+      h1 {
+        font-size: 2.5em;
+        margin: 0;
+        line-height: 1.2;
+      }
+    }
+
+    .subpageImg {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; // 이미지 비율 유지
+    }
+
+    .lightImg {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      width: 90px; // 크기 조절 가능
+      height: auto; // 비율 유지
+      z-index: -2;
+    }
+
+    .videoLink {
+      position: absolute;
+      bottom: 25px; // Adjust the position from the bottom
+      left: 0px; // Adjust the position from the left
+      display: flex;
+      background-color: white;
+      align-items: center;
+      color: black; // Text color
+      padding: 10px 15px; // Padding for the button
+      border-radius: 5px; // Rounded corners
+      font-size: 25px; // Font size
+
+      span {
+        margin-right: 10px; // Space between text and arrow
+        cursor: pointer; // Pointer cursor on hover
+
+        &:hover {
+          cursor: pointer; // Pointer cursor on hover
+        }
+      }
+
+      .arrowIcon {
+        width: 35px; // Adjust size as needed
+        height: auto;
+        cursor: pointer; // Pointer cursor on hover
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: translateX(5px); // Move the arrow to the right on hover
+        }
+      }
+    }
+  }
+
+  .enterCodeContainer {
+    width: 15%; // enterCode 컨테이너의 너비를 고정값으로 설정
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+// .youtubeLink {
+//   position: absolute;
+//   bottom: -1.5%;
+//   left: 5%;
+//   width: 15.5vw;
+//   height: 11vh;
+//   border-radius: 25px;
+//   z-index: 1;
+//   background-color: inherit;
+//   border: none;
+//   cursor: pointer;
+// }

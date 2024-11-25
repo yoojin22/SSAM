@@ -1,0 +1,69 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 12px; /* 더 부드러운 모서리 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  width: 50vw; /* 너비를 뷰포트 너비의 50%로 설정 */
+  max-width: 400px; /* 최대 너비를 400px로 설정 */
+  padding: 3vh 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+}
+
+.modalContent textarea {
+  width: 100%; /* 너비를 100%로 설정 */
+  height: 20vh; /* 텍스트 영역 높이 설정 */
+  padding: 1vh;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0; /* 연한 테두리 */
+  resize: none; /* 텍스트 영역 크기 조정 비활성화 */
+  margin-bottom: 2vh; /* 텍스트 영역과 버튼 사이에 간격 추가 */
+  font-size: 16px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  width: 100%; /* 버튼 컨테이너 너비를 100%로 설정 */
+}
+
+.modalButtons button {
+  padding: 1vh 2vw;
+  font-size: 16px;
+  border: none; /* 테두리 제거 */
+  border-radius: 8px; /* 둥근 모서리 설정 */
+  cursor: pointer;
+  margin: 0 0.5vw; /* 버튼 사이의 간격 줄이기 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  transition: background-color 0.3s, transform 0.3s; /* 전환 효과 추가 */
+}
+
+.submitButton {
+  background-color: #e5bffc; /* 등록 버튼의 배경 색상 */
+  color: white; /* 등록 버튼의 텍스트 색상 */
+}
+
+.cancelButton {
+  background-color: #ffffff; /* 취소 버튼의 배경 색상 */
+  color: black; /* 취소 버튼의 텍스트 색상 */
+}
+
+.submitButton:hover {
+  background-color: #daa4fc; /* 등록 버튼 마우스 오버 시 배경 색상 변경 */
+}
+
+.cancelButton:hover {
+  background-color: #dbdbdb; /* 취소 버튼 마우스 오버 시 배경 색상 */
+}

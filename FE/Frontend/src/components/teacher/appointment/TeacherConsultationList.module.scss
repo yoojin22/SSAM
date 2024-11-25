@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin radius($radius) {
+  border-radius: $radius;
+}
+
+.consultationlistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+
+.classNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1vh 0;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #5285ee;
+    color: white !important;
+  }
+
+  &.active {
+    background-color: #5285ee;
+    color: white !important;
+  }
+}
+
+.consultationSection {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 2vh 5vw;
+}
+
+.headerRow,
+.consultationRow {
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+  width: 100%;
+}
+
+.headerRow {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1vh;
+  height: 50px;
+
+  h3 {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.consultationRow {
+  background-color: #ffffff;
+  margin-top: 1vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.cellHeaderDate,
+.cellDate,
+.cellHeaderTime,
+.cellTime,
+.cellHeaderSmall,
+.cellSmall,
+.cellHeaderMedium,
+.cellMedium,
+.cellHeaderDescription,
+.cellDescription,
+.cellHeaderButtons,
+.cellButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cellHeaderDate,
+.cellDate {
+  flex: 0.8;
+}
+.cellHeaderTime,
+.cellTime {
+  flex: 0.8;
+}
+.cellHeaderSmall,
+.cellSmall {
+  flex: 0.5;
+}
+.cellHeaderMedium,
+.cellMedium {
+  flex: 0.8;
+}
+.cellHeaderDescription,
+.cellDescription {
+  flex: 1.5;
+}
+.cellHeaderButtons,
+.cellButtons {
+  flex: 0.8;
+}
+
+.cellDescription {
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // display: -webkit-box;
+  // -webkit-line-clamp: 1;
+  // -webkit-box-orient: vertical;
+  line-height: 1.3em;
+  max-height: 2.6em;
+}
+
+.approveButton,
+.rejectButton {
+  border-radius: 25px;
+  padding: 0.8vh 1.8vh;
+  margin: 0 0.5vw;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.approveButton {
+  color: #5285ee;
+  border: 2px solid #5285ee;
+  background-color: white;
+
+  &:hover {
+    background-color: #5285ee;
+    color: white;
+    border: 2px solid #5285ee;
+  }
+}
+
+.rejectButton {
+  color: #ee5252;
+  border: 2px solid #ee5252;
+  background-color: white;
+
+  &:hover {
+    border: 2px solid #ee5252;
+    color: white;
+    background-color: #ee5252;
+  }
+}
+
+.statusButton {
+  background-color: #dce7fc;
+  color: black;
+  border: 1px solid #dce7fc;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 110%;
+
+  &:hover {
+    background-color: #b9d0fc;
+  }
+}
+
+.statusButtonCompleted,
+.statusButtonCancelled {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #d9d9d9;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e4e4e4;
+  }
+}
+
+.cancelStatus,
+.doneStatus,
+.rejectStatus {
+  font-size: 110%;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.activeFilter {
+    background-color: #5285ee;
+    color: white;
+    border-color: #5285ee;
+    opacity: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}

@@ -1,0 +1,56 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.EnterArray {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // 세로 방향으로 컨텐츠 분산
+  height: 100%; // 부모 컨테이너의 높이를 채움
+
+  // welcomeBox와 codeBox에 공통으로 적용되는 스타일
+  .welcomeBox,
+  .codeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(218, 233, 255, 0.9); // 약간의 투명도 추가
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .codeBox h3 {
+    // font-size: 0.9em;
+    margin: 0 0 10px 0;
+  }
+
+  .classBtn {
+    padding: 8px;
+    border-radius: 20px;
+    // font-size: 0.8em;
+    white-space: nowrap;
+    // 나머지 버튼 스타일 유지
+  }
+}
+
+.classBtn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #5285ee;
+  font-size: 120%;
+  border: 1px solid #5285ee;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; // 부드러운 전환 효과 추가
+
+  &:hover {
+    background-color: #5285ee;
+    color: white;
+  }
+}

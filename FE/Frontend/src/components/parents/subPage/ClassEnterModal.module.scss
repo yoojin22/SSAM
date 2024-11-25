@@ -1,0 +1,118 @@
+.modalArray {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.enterArray {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  border: 10px solid #d0e0fe;
+  border-radius: 25px;
+}
+
+.headerArray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12%;
+  background-color: #d0e0fe;
+}
+
+.headerArray p {
+  font-size: 120%;
+}
+
+.outBtn {
+  position: relative;
+  left: 20%;
+  cursor: pointer;
+}
+
+.outBtn:hover {
+  color: red;
+}
+
+.inputForm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputBox {
+  margin-top: 5%;
+  width: 12%;
+  height: 10%;
+  font-size: 200%;
+  text-align: center;
+}
+
+.classInfo {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+.classInfo p {
+  margin: 5% 0%;
+}
+
+.registComplete {
+  width: 100%;
+  height: 12.1%;
+  border-radius: 0 0 15px 15px;
+  border-style: none;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.registComplete:hover {
+  background-color: #e5e5e5;
+}
+
+.classDetails {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트를 수직 가운데 정렬 */
+  justify-content: center; /* 이미지와 텍스트 사이 공간을 중앙 정렬 */
+  height: 60%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.teacherImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* 둥근 모서리 (원형으로 표시) */
+  object-fit: cover;
+  // border: 3px solid #d0e0fe;
+  margin-right: 20px;
+}
+
+.classText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 텍스트를 수직 가운데 정렬 */
+}
+
+.classText h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.errorMessage {
+  font-size: 28px;
+}

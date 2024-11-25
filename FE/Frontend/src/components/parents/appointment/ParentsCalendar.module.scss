@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.calendarContainer {
+  width: 45%;
+  max-width: 750px;
+  height: 760px; // ParentsCalendar의 원래 높이 유지
+  border: 0.2px solid rgb(220, 220, 220);
+  margin: 50px 0% 50px 0%; // ParentsCalendar의 원래 마진 유지
+  padding: 2vh;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  // .fc-scroller {
+  //   overflow-y: hidden !important;
+  // }
+
+  .fc {
+    &-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1vh;
+      padding: 0 1vw;
+    }
+
+    &-toolbar-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    &-day-header {
+      padding: 1vh 0;
+      color: #666;
+      background-color: #f8f9fa;
+      font-weight: 500;
+    }
+
+    &-daygrid-day-number {
+      font-size: 1rem;
+      padding: 0.5vh;
+      color: #333;
+      font-weight: 500;
+    }
+
+    &-daygrid-event {
+      font-size: 1rem;
+      padding: 0.5vh 1vh;
+      background-color: #dce7fc;
+      border-radius: 4px;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .selected-date {
+    background-color: #d0e7ff !important;
+  }
+}
+
+// 달력에 숫자 입력
+.dateCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.dayNumber {
+  font-size: 1em;
+}
+
+.additionalNumber {
+  font-size: 0.8em;
+  color: #007bff;
+  margin-top: 2px;
+}

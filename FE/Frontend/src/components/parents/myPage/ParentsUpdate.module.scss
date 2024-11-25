@@ -1,0 +1,216 @@
+.Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  padding: 2vh 5vw;
+}
+
+.menuNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.updateItem,
+.changeItem {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1vh 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px 25px 0 0;
+
+  &.updateItem {
+    background-color: #5285ee;
+    color: white;
+  }
+
+  &.changeItem {
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.changeItem:hover {
+  background-color: #5285ee;
+  color: white;
+}
+
+.infoArray {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.infoForm {
+  width: 40%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: left;
+    font-size: 120%;
+    padding-left: 2%;
+    white-space: nowrap;
+  }
+}
+
+.tableArray th {
+  border-left: none;
+}
+
+.tableArray td {
+  border-right: none;
+}
+
+
+.imgTd {
+  width: 33vw;
+  height: 20vh;
+}
+
+.profileImg {
+  width: 150px; /* 가로 150px */
+  height: 200px; /* 세로 200px */
+  margin-top: 2%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profileImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  display: flex;
+}
+
+.imgBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 3.7vh;
+  font-size: 80%;
+  margin: 2% 0.5%;
+  border: 2px solid #ee5252;
+  color: #ee5252;
+  background-color: white;
+  cursor: pointer;
+}
+
+.imgBtn:hover {
+  background-color: #ee5252;
+  color: white;
+  border: none;
+}
+
+.inputBtn {
+  display: none;
+}
+
+.updateBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 3.7vh;
+  font-size: 80%;
+  margin: 2% 0.5%;
+  border: 2px solid #5285ee;
+  color: #5285ee;
+  cursor: pointer;
+}
+
+.updateBtn:hover {
+  background-color: #5285ee;
+  color: white;
+  border: none;
+}
+
+.formBtnArray {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.saveBtn {
+  width: 5vw;
+  height: 5vh;
+  font-size: 120%;
+  border-radius: 20px;
+  margin: 2%;
+  background-color: white;
+  border: 2px solid #5285ee;
+  color: #5285ee;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background-color: #5285ee;
+  color: white;
+}
+
+.deleteBtn {
+  width: 5vw;
+  height: 5vh;
+  font-size: 120%;
+  border-radius: 20px;
+  margin: 2%;
+  background-color: white;
+  border: 2px solid #ee5252;
+  color: #ee5252;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  border: none;
+  background-color: #ee5252;
+  color: white;
+}
+
+.my-swal-popup {
+  height: 200px; /* 모달의 높이 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* 모달의 내부 여백 */
+  border-radius: 8px; /* 모달의 테두리 둥글게 */
+}
+
+.my-swal-confirm-button {
+  background-color: #5285ee; /* 확인 버튼 색상 */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.my-swal-confirm-button:hover {
+  background-color: #4076e4; /* 버튼에 마우스 올렸을 때 색상 */
+}

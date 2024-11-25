@@ -1,0 +1,88 @@
+@keyframes slide {
+    0% {
+      right: -200px;
+      opacity: 0;
+    }
+    100% {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes disappear {
+    0% {
+      right: 0px;
+      opacity: 1;
+    }
+    100% {
+      right: -200px;
+      opacity: 0;
+    }
+  }
+
+.directArray {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  
+    .imgArray {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .img {
+        width: 30vw;
+        height: 70vh;
+        box-shadow: 4px 4px 4px rgba(black, 0.4);
+        border-radius: 100%;
+        object-fit: cover;
+      }
+    }
+    .txtArray {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        animation: slide 3s ease-out;
+        margin: 2.5% 0% 0% 10%;
+    
+        h1 {
+          font-size: 350%;
+          color: #5285ee;
+        }
+    
+        .txtP {
+          margin-top: 3%;
+          font-size: 120%;
+          color: #777777;
+          position: relative;
+          animation: slide 4s ease-out;
+        }
+      }
+}
+
+// .txtArray {
+//     height: 30vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     gap: 5%;
+//     font-size: 120%;
+// }
+
+// .txtArray h3 {
+//     color: #5285ee;
+// }
+
+// .txtP {
+//     text-align: center;
+//     color: #777777;
+// }
+
+// .detailArray {
+//     height: 70vh;
+// }

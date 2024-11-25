@@ -1,0 +1,176 @@
+.classInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.classImage {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* 이미지 비율을 무시하고 컨테이너를 채우도록 설정 */
+}
+
+.infoBoxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2vh;
+  height: 190px;
+}
+
+.noticeBox,
+.classInfoBox,
+.inquiryBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2vh 2vw;
+  border-radius: 1vh;
+  width: 30%;
+  text-align: center;
+  margin: 0 1vh;
+}
+
+.noticeBox {
+  border: 3px solid #dce7fc;
+  position: relative;
+  text-align: left;
+}
+
+.noticeBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid #dce7fc;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.noticeBox p {
+  position: absolute;
+  top: 9vh;
+  left: 2.3vw;
+  width: calc(100% - 3vw);
+  white-space: pre-wrap;
+}
+
+.classInfoBox {
+  position: relative;
+  text-align: left;
+  background-color: #dce7fc;
+}
+
+.classInfoBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid white;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.classInfoBox p {
+  position: absolute;
+  top: 9vh;
+  left: 2.3vw;
+  width: calc(100% - 3vw);
+  white-space: pre-wrap;
+}
+
+.inquiryBox {
+  border: 3px solid #dce7fc;
+  position: relative;
+  text-align: left;
+}
+
+.inquiryBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid #dce7fc;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.inquiryBox .inquiryItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4px 0;
+  position: relative;
+  top: 3.5vh;
+}
+
+.inquiryQuestion {
+  flex: 1;
+}
+
+.inquiryBox .inquiryItem:hover {
+  color: #5285ee;
+  cursor: pointer;
+}
+
+.headerSeparator {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.headerSeparator h2 {
+  width: 100%;
+  border-bottom: 3px solid blue;
+}
+
+.studentList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2vw;
+  width: 100%;
+}
+
+.studentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.studentPhoto {
+  margin-top: 2vh;
+  width: 10vw;
+  height: 10vw;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.studentPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.studentName {
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 23px;
+}

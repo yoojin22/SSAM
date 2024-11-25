@@ -1,0 +1,128 @@
+/* TeacherAuthorization.module.scss */
+.authorizationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+
+.classNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1vh 0;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px 25px 0 0;
+}
+
+.navItem:hover {
+  background-color: #5285ee;
+  color: white !important; /* 글자색 하얀색으로 변경 */
+}
+
+.active {
+  background-color: #5285ee;
+  color: white !important; /* 글자색 하얀색으로 변경 */
+}
+
+.table {
+  width: 100%; /* 테이블을 중앙에 정렬하기 위해 너비를 조정 */
+  border-collapse: collapse; /* 테이블 셀 간의 경계를 제거 */
+  text-align: center; /* 모든 텍스트를 중앙 정렬 */
+
+  thead {
+    tr {
+      th {
+        text-align: center; /* 헤더 텍스트 중앙 정렬 */
+        padding: 1rem;
+        background-color: #f0f0f0; /* 헤더 배경 색상 */
+        border-bottom: 1px solid white; /* 헤더 아래쪽에만 경계 추가 */
+        border-left: none;
+        border-right: none;
+        font-weight: bold;
+        border-top: none; /* 헤더 셀의 윗쪽 경계선 제거 */
+      }
+
+      .nameColumn {
+        width: 20%; /* 신청한 사람 열 너비 */
+      }
+
+      .idColumn {
+        width: 20%; /* 아이디 열 너비 */
+      }
+
+      .dateColumn {
+        width: 15%; /* 신청일 열 너비 */
+      }
+
+      .actionColumn {
+        width: 25%; /* 관리 열 너비 */
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd; /* 각 셀 아래쪽에만 경계 추가 */
+        border-left: none; /* 본문의 셀 세로 경계선 제거 */
+        border-right: none; /* 본문의 셀 세로 경계선 제거 */
+      }
+
+      &:last-child {
+        td {
+          border-bottom: none; /* 마지막 셀의 아래쪽 경계 제거 */
+        }
+      }
+    }
+  }
+}
+
+.approveButton {
+  border-radius: 25px;
+  padding: 0.8vh 2vh;
+  margin: 0 0.5vw;
+  color: #5285ee;
+  border-color: #5285ee;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #5285ee;
+
+  &:hover {
+    background-color: #5285ee;
+    color: white;
+    border: 2px solid #5285ee;
+  }
+}
+
+.rejectButton {
+  border-radius: 25px;
+  padding: 0.8vh 2vh;
+  margin: 0 0.5vw;
+  color: #ee5252;
+  border-color: #ee5252;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #ee5252;
+
+  &:hover {
+    border: 2px solid #ee5252;
+    color: white;
+    background-color: #ee5252;
+  }
+}

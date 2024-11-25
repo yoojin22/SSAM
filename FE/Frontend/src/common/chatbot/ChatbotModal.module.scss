@@ -1,0 +1,181 @@
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalContent {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+  width: 23vw;
+  height: 70vh;
+  background-color: white;
+  border: 1px solid #aaaaaa;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  opacity: 0;
+  animation: slideUp 0.4s ease-out forwards;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topArray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 6vh;
+  background-color: #f7f7f7;
+  border-radius: 15px 15px 0 0;
+  padding: 0 10px;
+}
+
+.chatArray {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.textInput {
+  width: 95%;
+  height: 6vh;
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 25px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.studyTextInput,
+.chatTextInput {
+  padding-left: 15%;
+}
+
+.inputFile {
+  display: none;
+}
+
+.uploadImg {
+  position: absolute;
+  top: 81%;
+  left: 9%;
+  width: 2vw;
+  height: 3vh;
+  cursor: pointer;
+}
+
+.chatMenu {
+  width: 100%;
+  height: 8.2vh;
+  border-radius: 0 0 15px 15px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.imgBox {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 2vw;
+}
+
+.chatMenu p {
+  font-size: 90%;
+  margin-top: 5px;
+}
+
+.chatTxt {
+  color: #5285ee;
+}
+
+.message {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 25px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #eaeeffcd;
+  color: #333;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.chatContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.messagesContainer {
+  flex-grow: 1;
+}
+
+.datePickerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.startDatePicker {
+  width: 66%;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin-right: -20%;
+}
+
+.endDatePicker {
+  width: 66%;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin-right: 20%;
+}
+
+.fileNameText {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}

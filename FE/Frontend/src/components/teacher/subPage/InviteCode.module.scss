@@ -1,0 +1,152 @@
+.inviteArray {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  // welcomeBox와 codeBox에 공통으로 적용되는 스타일
+  .welcomeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(218, 233, 255, 0.9); // 약간의 투명도 추가
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .codeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(218, 233, 255, 0.9); // 약간의 투명도 추가
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .codeBox h3 {
+    // font-size: 0.9em;
+    margin: 0 0 10px 0;
+  }
+
+  .coreBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(218, 233, 255, 0.9); // 약간의 투명도 추가
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .coreBox h3 {
+    // font-size: 0.9em;
+    margin: 0 0 10px 0;
+    // font-size: 20px;
+  }
+
+  .copyButton {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 2%;
+  }
+
+  .copyButton button {
+    padding: 8px 15px; // 버튼 크기를 EnterCode.module.scss의 classBtn과 동일하게 수정
+    // font-size: 0.8em; // 폰트 크기 조정
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .copyButton button:hover {
+    background-color: #f4f4f4;
+  }
+
+  .btnArray {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 버튼을 column으로 정렬 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px; /* 버튼 사이의 간격을 설정 */
+  }
+
+  .pinBtn,
+  .deleteBtn {
+    width: 75%; /* 버튼의 크기를 동일하게 설정 */
+    padding: 8px 15px; /* 버튼 크기를 동일하게 유지 */
+    border-radius: 20px; /* 동일한 border-radius로 수정 */
+    // font-size: 0.8em; /* 폰트 크기 조정 */
+    color: #5285ee;
+    border-color: #5285ee;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .classBtn {
+    width: 120%; /* 버튼의 크기를 동일하게 설정 */
+    padding: 8px 15px; /* 버튼 크기를 동일하게 유지 */
+    border-radius: 20px; /* 동일한 border-radius로 수정 */
+    // font-size: 0.8em; /* 폰트 크기 조정 */
+    color: #5285ee;
+    border-color: #5285ee;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #5285ee;
+      color: white;
+    }
+
+    p {
+      margin: 0px;
+      padding: 0px;
+      text-align: center; // Ensure the text is left-aligned
+    }
+  }
+
+  .pinBtn {
+    width: 120px;
+    color: #5285ee;
+    border-color: #5285ee;
+
+    &:hover {
+      background-color: #5285ee;
+      color: white;
+    }
+  }
+
+  .deleteBtn {
+    width: 120px;
+    color: #ee5252;
+    border-color: #ee5252;
+
+    &:hover {
+      background-color: #ee5252;
+      color: white;
+    }
+  }
+}
+
+.classOpen {
+  margin: 10%;
+}

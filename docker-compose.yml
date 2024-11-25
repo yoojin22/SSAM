@@ -1,0 +1,17 @@
+version: '3'
+    
+services:
+  spring-app:
+    image: ${BACKEND_IMAGE_NAME:-asz2325/backend-image}:${BUILD_NUMBER:-latest}
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://i11e201.p.ssafy.io:3306/ssam?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=0rFyfav_shuQO
+      - SERVER_SERVLET_CONTEXT_PATH=/api
+      
+  react-app:
+    image: ${FRONTEND_IMAGE_NAME:-asz2325/frontend-image}:${BUILD_NUMBER:-latest}
+    ports:
+      - "3000:80"

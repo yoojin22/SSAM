@@ -1,0 +1,249 @@
+.classInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+
+.classNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1vh 0;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px 25px 0 0;
+}
+
+.navItem:hover {
+  background-color: #5285ee;
+  color: white;
+}
+
+.active {
+  background-color: #5285ee;
+  color: white;
+}
+
+.altActive {
+  background-color: #5285ee;
+  color: white;
+}
+
+.inputFileForm {
+  display: none;
+}
+
+.inputFile {
+  position: absolute;
+  top: 20%;
+  left: 92%;
+  width: 4vw;
+  height: 7vh;
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.classImage {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* 이미지 비율을 무시하고 컨테이너를 채우도록 설정 */
+}
+
+.infoBoxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2vh;
+  height: 190px;
+}
+
+.noticeBox,
+.classInfoBox,
+.inquiryBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2vh 2vw;
+  border-radius: 1vh;
+  width: 30%;
+  text-align: center;
+  margin: 0 1vh;
+}
+
+.noticeBox {
+  border: 3px solid #dce7fc;
+  position: relative;
+  text-align: left;
+}
+
+.noticeBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid #dce7fc;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.noticeBox p {
+  position: absolute;
+  top: 8vh;
+  left: 2.3vw;
+  width: calc(100% - 3vw);
+  white-space: pre-wrap;
+}
+
+.noticeBox .editBox {
+  margin-top: 8vh;
+  height: 100%;
+  width: calc(100% - 0vw);
+}
+
+.noticeBox .editTextarea {
+  padding: 1%;
+  width: 100%;
+  height: 16vh;
+  font-size: 100%;
+}
+
+.noticeBox .editIcon {
+  position: absolute;
+  top: 1.8vh;
+  right: 1vw;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #b5cefe;
+  transition: color 0.3s ease;
+}
+
+.noticeBox .editIcon:hover {
+  color: #77a6fd;
+}
+
+.classInfoBox {
+  position: relative;
+  text-align: left;
+  background-color: #dce7fc;
+}
+
+.classInfoBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid white;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.classInfoBox p {
+  position: absolute;
+  top: 8vh;
+  left: 2.3vw;
+  width: calc(100% - 3vw);
+  white-space: pre-wrap;
+}
+
+.classInfoBox .editBox {
+  margin-top: 8vh;
+  height: 100%;
+  width: calc(100% - 0vw);
+}
+
+.classInfoBox .editTextarea {
+  padding: 1%;
+  width: 100%;
+  height: 16vh;
+  font-size: 100%;
+}
+
+.classInfoBox .editIcon {
+  position: absolute;
+  top: 1.8vh;
+  right: 1vw;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.classInfoBox .editIcon:hover {
+  color: #cccccc;
+}
+
+.inquiryBox {
+  border: 3px solid #dce7fc;
+  position: relative;
+  text-align: left;
+}
+
+.inquiryBox h2 {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: calc(100% - 2vw);
+  border-bottom: 2px solid #dce7fc;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+
+.inquiryBox .inquiryItem {
+  position: relative;
+  top: 3vh;
+  cursor: pointer;
+}
+
+.inquiryBox .inquiryItem:hover {
+  color: #5285ee;
+}
+
+.headerSeparator {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.headerSeparator h2 {
+  width: 100%;
+  border-bottom: 3px solid blue;
+}
+
+.inquiryBox .inquiryItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4px 0;
+  position: relative;
+  top: 3.5vh;
+}
+
+.inquiryQuestion {
+  flex: 1;
+  margin-bottom: 5px;
+  margin-top: -4px;
+}
+
+.classInfoBox h2 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,84 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    top: 21%;
+  }
+  50% {
+    top: 23%;
+  }
+}
+
+.menuArray {
+  height: 60vh;
+}
+
+.menuBoxArray {
+  position: relative;
+  top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuBox {
+  width: 24vw;
+  background-color: #5285ee;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuBox:hover {
+  transform: translateY(-10px);
+  background-color: #4b7ee5;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menuBox1 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.menuBox2 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in 0.05s forwards;
+}
+
+.menuBox3 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in 0.1s forwards;
+}
+
+.menuTxt {
+  position: relative;
+  top: 5%;
+  text-align: center;
+  font-size: 120%;
+}
+
+.imgArray {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 10% 0%;
+}
+
+.classroomImg {
+  width: 13.2vw;
+}
+
+.questionImg {
+  width: 9vw;
+}
+
+.appointmentImg {
+  width: 11vw;
+}

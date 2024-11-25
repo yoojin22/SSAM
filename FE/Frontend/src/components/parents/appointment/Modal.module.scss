@@ -1,0 +1,48 @@
+/* 모달 스타일 추가 */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px); /* 배경 블러 추가 */
+  z-index: 1000; /* 다른 요소보다 앞에 오도록 설정 */
+}
+
+.modalContent {
+  // z-index: 1001; /* 다른 요소보다 앞에 오도록 설정 */
+  width: 300px; /* 너비를 좀 더 넓게 설정 */
+  background: white;
+  padding: 2rem;
+  border-radius: 8px; /* 더 부드러운 모서리 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30%; /* 버튼 크기를 더 작게 설정 */
+}
+
+.reservationButton {
+  background-color: #6eb4ff; /* 애플의 블루 색상 */
+  color: white;
+
+  &:hover {
+    background-color: #52a1f4; /* 어두운 블루 색상 */
+  }
+}

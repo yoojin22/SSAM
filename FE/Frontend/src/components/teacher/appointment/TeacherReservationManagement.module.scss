@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+
+.classNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1vh 0;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: #5285ee;
+  color: white !important;
+}
+
+.active {
+  background-color: #5285ee;
+  color: white !important;
+}

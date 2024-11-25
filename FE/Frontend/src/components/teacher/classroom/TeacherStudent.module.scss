@@ -1,0 +1,50 @@
+.studentList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns */
+  gap: 2vw; /* Adjusted gap between student items */
+  width: 100%; /* Take up the full width of the parent */
+}
+
+.studentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.studentPhoto {
+  margin-top: 2vh; /* Reduced top margin */
+  width: 10vw; /* Responsive width */
+  height: 10vw; /* Responsive height, matches width for circular shape */
+  max-width: 150px; /* Maximum width */
+  max-height: 150px; /* Maximum height */
+  border-radius: 50%; /* Circle shape */
+  border: 3px solid black; /* Border around the photo */
+  background-color: #ffffff; /* Background color when no image is available */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image stays within the circle */
+}
+
+.studentPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 50%; /* Makes sure the image is also circular */
+}
+
+.studentName {
+  margin-top: 1vh; /* Reduced margin between the photo and the name */
+  text-align: center;
+  font-size: 23px;
+}
+
+.studentLink {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits the color from the parent element */
+
+  &:hover {
+    color: #5285ee; /* Changes color on hover */
+  }
+}

@@ -1,0 +1,38 @@
+version: '3'
+    
+services:
+  jenkins:
+    build: .  # 커스텀 Dockerfile 사용
+    user: root
+    environment:
+      - JENKINS_OPTS="--prefix=/jenkins"
+      - JENKINS_ARGS="--prefix=/jenkins"
+    ports:
+      - "8080:8080"
+    volumes:
+      - /home/ubuntu/jenkins_home:/var/jenkins_home:z
+      - /home/ubuntu/jenkins_home/jenkins.war:/usr/share/jenkins/jenkins.war:z
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 0rFyfav_shuQO
+      MYSQL_DATABASE: ssam
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  python:
+    build: 
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8082:5000"
+    volumes:
+      - /home/ubuntu/models:/app/models:z
+
+volumes:
+  mysql_data:
+    external: true
